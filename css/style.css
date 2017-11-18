@@ -1,0 +1,78 @@
+html,
+body {
+    min-width: 1020px;
+    margin: 0 auto;
+    padding: 0 60px;
+
+    color: #545454;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    background: #ffffffff
+}
+
+.main-header {
+    min-width: inherit;
+    min-height: 70px;
+
+    padding-top: 25px;
+    margin-bottom: 30px;
+}
+.main-navigation {
+    min-width: inherit;
+    display: flex;
+    justify-content: space-between;
+}
+.main-navigation ul {
+    min-width: 600px;
+    margin:0;
+    padding:0;
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+.main-navigation li {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.main-navigation a {
+    display: block;
+    padding: 10px 0;
+    padding-left: 40px;
+    padding-right: 10px;
+    position: relative;
+
+    color: inherit;
+    text-decoration: none;
+}
+.home {
+    margin-right: 10px;
+}
+.home::before,
+.about::before{
+
+    content: "";
+    min-width: 20px;
+    min-height: 20px;
+
+    position: absolute;
+    bottom: 16px;
+    left: 10px;
+    background: url("../img/sprite.png") no-repeat;
+}
+.home::before {
+    background-position: -10px -0px;
+}
+.about::before {
+    background-position: -10px -54px;
+}
+
+.main-navigation a:hover {
+    color: #ffc5c8;
+}
+.main-navigation a:hover::before{
+    opacity: 0.3;
+}
+
+
